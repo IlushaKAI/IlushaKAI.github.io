@@ -1,0 +1,104 @@
+body {
+  font-family: "Abhaya Libre", serif;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.header-hero-image {
+  width: 100%;
+  height: 100svh;
+  background-image: url(image/Rectangle\ 244.png);
+  background-size: cover;
+  background-position: 50% 76%;
+}
+.container{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+header .container, nav ul {
+  display: flex;
+}
+    
+header .container {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  color:hsl(360 0% 70%);
+  font-size: 40;
+  margin-top:2rem;
+}
+nav a {
+  color: hsl(360 0% 75%);
+  text-decoration: none;
+  padding: 0.85em 0;
+  font-size: 20px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-top: 4rem;
+}
+nav li{
+  margin-left: 1.25em;
+  padding-left: 40px;
+}
+/* hero part layout */
+
+.section-two-side {
+  display: flex;
+  flex-wrap: wrap; /*позволяет элементам переноситься на новую строку при сужении экрана*/
+  gap: 1rem;
+}
+.left-side {
+  font-family: "Metal Mania", serif;
+  letter-spacing: 5px;
+  flex-grow: 1; /*позволяет элементу растягиваться на всю свободную ширину, соответсвеено занимать больше места чем карточки*/
+  flex: 1 300px; /* 1 - включает возможность *прыганья* блоков side при уменьшении экрана, 300px - минимальная ширина при которой происходит*/
+}
+h2{
+  color: white;
+  font-size: 124px;
+}
+.under-left-side{
+  font-family: "Metal Mania", serif;
+  color: hsl(360 0% 70%);
+  letter-spacing: 5px;
+}
+h3{
+  font-size: 64px;
+}
+.btn{
+  font-family: "Abhaya Libre", serif;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem;
+  background-color: hsla(350 100% 20.4% / 0.5);
+  text-align: center;
+  border: 1.8px solid hsla(304 0% 100% / 0.25);
+  width: 12em;
+  margin-top: 2rem;
+}
+.right-side {
+  flex: 1 300px;
+  flex-grow: 0;
+}
+.card {
+  padding: 60px;
+  background-color: hsla(32 84.6% 22.9% / 0.6);
+  color: white;
+  margin-bottom: 2rem;
+}
+h4{
+  text-align: left;
+}
+.text2{
+  text-align: center;
+}
