@@ -1,10 +1,16 @@
+/* указываем шрифт для всего тела сайта */
 body {
   font-family: "Abhaya Libre", serif;
 }
+/* звездочка означает всем эдменатм на станице указать нулевые внешние отступы, border-box позволяет учитывать размер границы внутри элемента */
+/* подробнее про border-box https://developer.mozilla.org/ru/docs/Web/CSS/box-sizing */
 *{
   margin: 0;
   box-sizing: border-box;
 }
+/* тут долго описывать кажждое свойство, лучше сами погуглите, но если вкратце то,*/
+/* в качестве высоты передаем svh - минимальную высоту экрана пользователя, браузер может получать эту информацию */
+/* background-position - помагает нам сместить картинку, указават точку фокуса. В данном случае 50% по оси X и 76% по оси Y */
 .header-hero-image {
   width: 100%;
   height: 100svh;
@@ -12,14 +18,16 @@ body {
   background-size: cover;
   background-position: 50% 76%;
 }
+/* задаем те самые красивые отступы контейнера */
 .container{
   margin-left: 5rem;
   margin-right: 5rem;
 }
+
 header .container, nav ul {
   display: flex;
 }
-    
+/* выравниваем элементы внутри контейнера, принадлежащего хэдеру */
 header .container {
   justify-content: space-between;
   align-items: center;
